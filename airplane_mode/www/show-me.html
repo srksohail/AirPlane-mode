@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .box {
+      width: 500px;
+      height: 300px;
+      border: 2px solid black;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+
+{% set color = frappe.form_dict.get("color") or "black" %}
+
+<div class="box" style = "background-color:{{color}};"></div>
+
+</body>
+</html>

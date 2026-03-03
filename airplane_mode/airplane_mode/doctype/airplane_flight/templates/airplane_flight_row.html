@@ -1,0 +1,26 @@
+<div class="card">
+	<h4 class="title">{{doc.airplane}}</h4>
+	<h6>{{doc.source_airport_code}} &rarr; {{doc.destination_airport_code}}</h6>
+	<h6>{{frappe.utils.format_date(doc.date_of_departure,"d,MMMM,YYYY")}} | {{doc.time_of_departure}} | {{frappe.utils.format_duration(doc.duration)}}</h6>
+
+
+	<a class="spacial-link" href="/{{doc.route}}"> view flight</a>
+</div>
+<style>
+	body{
+		
+		background:linear-gradient(135deg,#faf1f1,#d6d3d3);
+	}
+	.card{
+		margin:20px auto;
+		padding: 15px;
+		padding-top: 1px;
+	}
+	.spacial-link{
+		color: #551ed3;
+	}
+	
+	</style>
+	
+
+ 
