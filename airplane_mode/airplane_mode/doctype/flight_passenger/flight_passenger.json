@@ -8,7 +8,8 @@
   "first_name",
   "date_of_birth",
   "column_break_upjy",
-  "last_name"
+  "last_name",
+  "full_name"
  ],
  "fields": [
   {
@@ -32,6 +33,12 @@
    "fieldname": "last_name",
    "fieldtype": "Data",
    "label": "Last Name"
+  },
+  {
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "label": "Full Name",
+   "read_only": 1
   }
  ],
  "grid_page_length": 50,
@@ -39,10 +46,10 @@
  "links": [
   {
    "link_doctype": "Airplane Ticket",
-   "link_fieldname": "passenger "
+   "link_fieldname": "passenger"
   }
  ],
- "modified": "2026-01-17 12:37:48.034136",
+ "modified": "2026-02-02 16:35:10.019202",
  "modified_by": "Administrator",
  "module": "airplane_mode",
  "name": "Flight Passenger",
